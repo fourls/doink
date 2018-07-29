@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 212472138632423602}
   - component: {fileID: 114355747950288280}
   - component: {fileID: 58911089059772218}
-  - component: {fileID: 114378784508803858}
-  - component: {fileID: 114105270762362062}
+  - component: {fileID: 114566889430274498}
   m_Layer: 10
   m_Name: button
   m_TagString: Untagged
@@ -59,17 +58,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
   m_Radius: 0.3
---- !u!114 &114105270762362062
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1140726736438778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5a4e8948a3d6943a0b275698f3e046, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114355747950288280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a105acd20f14676a3acfe5948abddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114378784508803858
+--- !u!114 &114566889430274498
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,15 +77,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1140726736438778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed4501611545496fbd49459477c42dc, type: 3}
+  m_Script: {fileID: 11500000, guid: a5eb03ac9a9468942bf683db674597b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextPrefab: {fileID: 1683026619553980, guid: 37b4e7d01cd824eb4a66fa3ba469961c,
-    type: 2}
-  resourcePrefab: {fileID: 1594573302350950, guid: dcd0f52d71ba843e788088b3b20ac8a8,
-    type: 2}
-  health: 1000
-  items: []
+  on: 0
+  onSprite: {fileID: 21300128, guid: d2d54c2746c4d4c35b9820ae64cfb822, type: 3}
+  offSprite: {fileID: 21300126, guid: d2d54c2746c4d4c35b9820ae64cfb822, type: 3}
 --- !u!212 &212472138632423602
 SpriteRenderer:
   m_ObjectHideFlags: 1
