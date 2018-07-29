@@ -94,6 +94,8 @@ public class Player : MonoBehaviour {
 		foreach(KeyValuePair<Item,int> kvp in inventory) {
 			toolbar[i] = kvp.Key;
 			i++;
+			if(i > 4)
+				break;
 		}
 		return toolbar;
 	}
@@ -106,6 +108,8 @@ public class Player : MonoBehaviour {
 			toolbar[i] = kvp.Key;
 			amounts[i] = kvp.Value;
 			i++;
+			if(i > 4)
+				break;
 		}
 		return toolbar;
 	}
