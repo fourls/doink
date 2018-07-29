@@ -30,7 +30,7 @@ public class Player : MonoBehaviour {
 
 			if(hit.collider == null) {
 				Item selectedItem = GetToolbarItems()[selectedSlot];
-				if(selectedItem.placedObject != null) {
+				if(selectedItem != null && selectedItem.placedObject != null) {
 					Instantiate(selectedItem.placedObject,cursor.flooredPosition,Quaternion.identity);
 					RemoveItem(selectedItem);
 				}
