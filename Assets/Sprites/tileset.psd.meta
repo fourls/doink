@@ -67,6 +67,9 @@ TextureImporter:
     21300124: button-item
     21300126: button-unpressed
     21300128: button-pressed
+    21300130: electricwall-retracted
+    21300132: electricwall-extended
+    21300134: electricwall-item
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1115,6 +1118,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4dc054b8dad03b743bf6c398feb0d0b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricwall-retracted
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6043e0bc128e6d42a9359b228a4aa86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricwall-extended
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3368018b5e684b43a9c557da931b3d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricwall-item
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbfdabae07655841b7b7553f24f2363
       vertices: []
       indices: 
       edges: []
