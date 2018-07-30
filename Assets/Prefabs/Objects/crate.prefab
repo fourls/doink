@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4222328439189030}
   - component: {fileID: 212833065981637106}
   - component: {fileID: 114266570576927698}
-  - component: {fileID: 114708901515406162}
   - component: {fileID: 58554814861661210}
   - component: {fileID: 61488858226931552}
+  - component: {fileID: 114862039809334842}
+  - component: {fileID: 50165907557227008}
   m_Layer: 10
   m_Name: crate
   m_TagString: Untagged
@@ -44,6 +45,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50165907557227008
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1666921527972068}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 15
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!58 &58554814861661210
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -95,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a105acd20f14676a3acfe5948abddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114708901515406162
+--- !u!114 &114862039809334842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,17 +124,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666921527972068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed4501611545496fbd49459477c42dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c9e5d70ec5974c15b8b0d378b0a0e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextPrefab: {fileID: 1683026619553980, guid: 37b4e7d01cd824eb4a66fa3ba469961c,
-    type: 2}
-  resourcePrefab: {fileID: 1594573302350950, guid: dcd0f52d71ba843e788088b3b20ac8a8,
-    type: 2}
-  health: 8
-  items:
-  - item: {fileID: 11400000, guid: ed3755ba239b841779f0510ee5fe2d83, type: 2}
-    amount: 3
 --- !u!212 &212833065981637106
 SpriteRenderer:
   m_ObjectHideFlags: 1

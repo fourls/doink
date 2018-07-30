@@ -2,12 +2,12 @@ fileFormatVersion: 2
 guid: d2d54c2746c4d4c35b9820ae64cfb822
 TextureImporter:
   fileIDToRecycleName:
-    21300000: grass-tl
-    21300002: grass-t
+    21300000: grassstairs-l
+    21300002: grassstairs-r
     21300004: grass-tr
     21300006: tree-0
-    21300008: grass-l
-    21300010: grass-c
+    21300008: grassstairs-u
+    21300010: grassstairs-d
     21300012: grass-r
     21300014: rock-0
     21300016: grass-bl
@@ -70,6 +70,13 @@ TextureImporter:
     21300130: electricwall-retracted
     21300132: electricwall-extended
     21300134: electricwall-item
+    21300136: star-0
+    21300138: star-1
+    21300140: tileset_0
+    21300142: tileset_1
+    21300144: star-2
+    21300146: star-3
+    21300148: star-item
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -163,7 +170,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass-tl
+      name: grassstairs-l
       rect:
         serializedVersion: 2
         x: 0
@@ -183,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-t
+      name: grassstairs-r
       rect:
         serializedVersion: 2
         x: 16
@@ -198,26 +205,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 20ced364c70874b4d9a2dc5e9ae84c4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-tr
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 240
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e9e674ca3d20436ba567779d7ad051b
       vertices: []
       indices: 
       edges: []
@@ -243,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-l
+      name: grassstairs-u
       rect:
         serializedVersion: 2
         x: 0
@@ -263,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass-c
+      name: grassstairs-d
       rect:
         serializedVersion: 2
         x: 16
@@ -278,26 +265,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dc4c97bbe049a423ba81a6b41b8b278e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-r
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29aad68eeb22749248fa99dda8bdc110
       vertices: []
       indices: 
       edges: []
@@ -318,66 +285,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a809f08977e0345e6a48edf686dad722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-bl
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 208
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc662206c17584bd1b8829ea2761b448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-b
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 208
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a8a4eb7bc17247d79a3f5bd9a9d05ca
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass-br
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 208
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bba2cc742e024642811cd2c85b0eb6d
       vertices: []
       indices: 
       edges: []
@@ -1171,13 +1078,113 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7fbfdabae07655841b7b7553f24f2363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star-0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8023d5ffa95fd4e92acac126fd9ae53f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star-1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a9a134f4bed47ea888ed363ea681f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star-2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e06f0d8993df4cc78ece4c468cae491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star-3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ce3c7b3a8744fb79bc40d214df65e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star-item
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64110ac181ac34391b7a106ff7900840
       vertices: []
       indices: 
       edges: []

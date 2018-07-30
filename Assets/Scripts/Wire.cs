@@ -97,7 +97,7 @@ public class Wire : MonoBehaviour {
 	}
 
 	public ElectricalSource GetElectrical() {
-		RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3)rayOffset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Interactable"));
+		RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3)rayOffset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Electrical"));
 
 		if(hit.collider != null && hit.collider.gameObject.GetComponent<ElectricalSource>() != null) {
 			return hit.collider.gameObject.GetComponent<ElectricalSource>();
@@ -106,7 +106,7 @@ public class Wire : MonoBehaviour {
 	}
 
 	public Wire GetWireAt(Vector2 position) {
-		RaycastHit2D hit = Physics2D.Raycast(position + rayOffset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Electrical"));
+		RaycastHit2D hit = Physics2D.Raycast(position + rayOffset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Wiring"));
 
 		if(hit.collider != null) {
 			return hit.collider.gameObject.GetComponent<Wire>();
