@@ -26,13 +26,14 @@ public class Player : MonoBehaviour {
 		}
 
 		if(Input.GetMouseButtonDown(1)) {
-			RaycastHit2D hit = Physics2D.Raycast(cursor.flooredPosition + cursor.offset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Interactable"));
+			RaycastHit2D hit = Physics2D.Raycast(cursor.flooredPosition + cursor.offset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Interactable") << LayerMask.NameToLayer("Electrical"));
+			RaycastHit2D ground = Physics2D.Raycast(cursor.flooredPosition + cursor.offset,Vector2.one,0.01f,1 << LayerMask.NameToLayer("Ground"));
 
-			if(hit.collider == null) {
+			if(hit.collider == null && ground.collider != null) {
 				Item selectedItem = GetToolbarItems()[selectedSlot];
 				if(selectedItem != null && selectedItem.placedObject != null) {
 					GameObject go = Instantiate(selectedItem.placedObject,cursor.flooredPosition,Quaternion.identity);
-
+					MovingCamera.main.Shake(0.1f,5f);
 					RemoveItem(selectedItem);
 				}
 			}
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Tab)) {
 			selectedSlot++;
-			if(selectedSlot > 4)
+			if(selectedSlot >= inventory.Count)
 				selectedSlot = 0;
 		}
 	}
@@ -89,28 +90,24 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public Item[] GetToolbarItems() {
-		Item[] toolbar = new Item[5] {null,null,null,null,null};
+	public List<Item> GetToolbarItems() {
+		List<Item> toolbar = new List<Item>();
 		int i = 0;
 		foreach(KeyValuePair<Item,int> kvp in inventory) {
-			toolbar[i] = kvp.Key;
+			toolbar.Add(kvp.Key);
 			i++;
-			if(i > 4)
-				break;
 		}
 		return toolbar;
 	}
 
-	public Item[] GetToolbarItems(out int[] amounts) {
-		Item[] toolbar = new Item[5] {null,null,null,null,null};
-		amounts = new int[5] {0,0,0,0,0};
+	public List<Item> GetToolbarItems(out List<int> amounts) {
+		List<Item> toolbar = new List<Item>();
+		amounts = new List<int>();
 		int i = 0;
 		foreach(KeyValuePair<Item,int> kvp in inventory) {
-			toolbar[i] = kvp.Key;
-			amounts[i] = kvp.Value;
+			toolbar.Add(kvp.Key);
+			amounts.Add(kvp.Value);
 			i++;
-			if(i > 4)
-				break;
 		}
 		return toolbar;
 	}

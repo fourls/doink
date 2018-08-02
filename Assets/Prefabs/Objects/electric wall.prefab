@@ -113,6 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a105acd20f14676a3acfe5948abddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shadowSize: {x: 0, y: 0}
+  shadowOffset: {x: 0, y: 0}
+  shadow: {fileID: 0}
 --- !u!212 &212833065981637106
 SpriteRenderer:
   m_ObjectHideFlags: 1

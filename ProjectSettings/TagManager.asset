@@ -21,8 +21,8 @@ TagManager:
   - Interactable
   - Electrical
   - Wiring
-  - 
-  - 
+  - Ground
+  - WorldUI
   - 
   - 
   - 

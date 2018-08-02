@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed4501611545496fbd49459477c42dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextPrefab: {fileID: 1683026619553980, guid: 37b4e7d01cd824eb4a66fa3ba469961c,
+  damageIndicatorPrefab: {fileID: 1695043457306802, guid: c09ce704d57be48819234329cddeeb3d,
     type: 2}
   resourcePrefab: {fileID: 1594573302350950, guid: dcd0f52d71ba843e788088b3b20ac8a8,
     type: 2}
@@ -104,6 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a105acd20f14676a3acfe5948abddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shadowSize: {x: 0.7, y: 0.3}
+  shadowOffset: {x: 0, y: 0}
+  shadow: {fileID: 0}
 --- !u!212 &212000306096981808
 SpriteRenderer:
   m_ObjectHideFlags: 1

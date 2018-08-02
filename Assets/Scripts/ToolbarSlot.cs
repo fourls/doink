@@ -21,22 +21,26 @@ public class ToolbarSlot : MonoBehaviour {
 	}
 
 	void Update() {
-		int[] amounts;
-		Item item = player.GetToolbarItems(out amounts)[slot];
+		List<int> amounts;
+		List<Item> items = player.GetToolbarItems(out amounts);
 
-		if(item == null) {
+		if(items.Count <= slot) {
 			itemSprite.enabled = false;
 			amountText.text = "";
+			GetComponent<Image>().enabled = false;
 		} else {
+			Item item = items[slot];
 			itemSprite.enabled = true;
 			itemSprite.sprite = item.sprite;
 			amountText.text = amounts[slot].ToString();
+			GetComponent<Image>().enabled = true;
+
+			if(player.selectedSlot == slot) {
+				GetComponent<Image>().sprite = selectedSprite;
+			} else {
+				GetComponent<Image>().sprite = normalSprite;
+			}
 		}
 
-		if(player.selectedSlot == slot) {
-			GetComponent<Image>().sprite = selectedSprite;
-		} else {
-			GetComponent<Image>().sprite = normalSprite;
-		}
 	}
 }

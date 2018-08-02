@@ -28,5 +28,8 @@ public class ElectricalDoor : ElectricalObject {
 			}
 			sr.sprite = extendedSprite;
 		}
+
+		if(MovingCamera.main != null)
+			MovingCamera.main.Shake(0.4f,3f);
 	}
 }
